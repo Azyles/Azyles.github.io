@@ -38,7 +38,18 @@
       </li>
     </ul>
   </div>
-</nav><script>
+</nav>
+<script> 
+        $(document).ready(function () { 
+  
+            $('ul.navbar-nav > li') 
+                    .click(function (e) { 
+                $('ul.navbar-nav > li') 
+                    .removeClass('active'); 
+                $(this).addClass('active'); 
+            }); 
+        }); 
+    </script> <script>
   if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
 window.onmousewheel = document.onmousewheel = wheel;
 
