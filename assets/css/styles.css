@@ -1,9 +1,9 @@
-.navbar.fixed-top.navbar-expand-lg.navbar-light {
+.navbar.fixed-top.navbar-expand-lg.navbar-dark {
   margin-left: 10%;
   /*margin-bottom: 2%;*/
   margin-right: 10%;
   margin-top: 2%;
-  background-color: rgba(242,242,242,0.72);
+  background-color: rgba(29,29,31,0.72);
   border-radius: 10px;
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
@@ -12,6 +12,10 @@
   /*width: 50%;*/
   font-size: 20px;
   font-weight: bold;
+}
+
+.navbar .nav-item {
+  color: white;
 }
 
 /* width */
