@@ -19,6 +19,7 @@
     <link rel="icon" type="image/png" sizes="500x500" href="assets/img/MacBook%20Pro%20-%2045.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body style="height: 100%;width: 100%;">
@@ -83,9 +84,20 @@
       </li>
     </ul>
   </div>
-</nav>
+</nav><script>
+let siteTitle = 'PROJECTS';
+window.addEventListener('blur', () => {
+  siteTitle = document.title;
+  document.title = 'KUSHAGRA SINGH';
+});
+window.addEventListener('focus', () => {
+  document.title = siteTitle;
+});
+</script>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>

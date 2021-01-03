@@ -19,9 +19,20 @@
     <link rel="icon" type="image/png" sizes="500x500" href="assets/img/MacBook%20Pro%20-%2045.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body style="height: 100%;"><nav class="navbar fixed-top navbar-expand-lg navbar-light center">
+<body style="height: 100%;"><script>
+let siteTitle = 'HOME';
+window.addEventListener('blur', () => {
+  siteTitle = document.title;
+  document.title = 'KUSHAGRA SINGH';
+});
+window.addEventListener('focus', () => {
+  document.title = siteTitle;
+});
+</script>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light center">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
   </button>
@@ -87,6 +98,7 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>
